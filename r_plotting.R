@@ -35,11 +35,11 @@ p <- p+scale_x_continuous(breaks = round(seq(min(df.temp$Year),
                                              max(df.temp$Year), 
                                              by = 10), 1))
 p <- p+scale_y_continuous(limits = c(-51, 100), breaks =c(-50, -25, 0, 25, 50, 75, 100))
-p <- p+scale_colour_manual("Geographical Regions:", labels = c("North (24째N-90째N latitude)",
-                                                               "South (90째S-24째N latitude)"),
+p <- p+scale_colour_manual("Geographical Regions:", labels = c("North (24캮-90캮 latitude)",
+                                                               "South (90캳-24캮 latitude)"),
                            values=cbbPalette)
-p <- p+ylab("Temperature Anomaly (째C)")
-p <- p+ggtitle("Regional Surface Temperature Anomalies 1880 - 2014 (in 째C)
+p <- p+ylab("Temperature Anomaly (캜)")
+p <- p+ggtitle("Regional Surface Temperature Anomalies 1880 - 2014 (in 캜)
                \n5-Year Running Means, Base Period 1951 - 1980\n\n")
 p <- p+theme(plot.title = element_text(lineheight=.8, face="bold"), legend.position="bottom")
 
