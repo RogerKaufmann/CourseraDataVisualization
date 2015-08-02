@@ -4,7 +4,6 @@ library(reshape)
 
 # Encoding: ISO 88591-1
 
-setwd("C:\\Users\\Roger Kaufmann\\Dump Truck\\OnlineCourses\\Data Visualization\\ProgrammingAssignment1")
 df.temp <- read.csv("data/ExcelFormattedGISTEMPData2CSV.csv", na.strings=c("****", "***"))
 
 df.plot <- df.temp["Year"]
